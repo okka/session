@@ -8,7 +8,7 @@ include("config.php");
 
 $pw = sha1($pw);
   
-      $sql = "SELECT * FROM rdv WHERE email = '$uid' and pass = '$pw'";
+      $sql = "SELECT * FROM dbname WHERE email = '$uid' and pass = '$pw'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       
